@@ -1,8 +1,8 @@
 class Abiyz < Formula
   desc "Command-line tool for Abiyz Cloud"
   homepage "https://abiyz.com"
-  url "https://registry.npmjs.org/abiyz/-/abiyz-0.0.1.tgz"
-  sha256 "fbf02072ef2cb075713e229144d76ce805996ec55deff00ac6cca7c2b28a59e7"
+  url "https://registry.npmjs.org/abiyz/-/abiyz-0.2.2.tgz"
+  sha256 "16aed288c0f724f970be5b9b1dd3709e56ae4679abaace8bf12c5c14ac1f065d"
   license :cannot_represent
 
   depends_on "node@24"
@@ -13,6 +13,6 @@ class Abiyz < Formula
   end
 
   test do
-    assert_match "not released yet", shell_output(bin/"abiyz")
+    assert_equal version.to_s, shell_output("#{bin}/abiyz --version").strip
   end
 end
