@@ -1,8 +1,8 @@
 class Abiyz < Formula
   desc "Command-line tool for Abiyz Cloud"
   homepage "https://abiyz.com"
-  url "https://registry.npmjs.org/abiyz/-/abiyz-0.2.2.tgz"
-  sha256 "16aed288c0f724f970be5b9b1dd3709e56ae4679abaace8bf12c5c14ac1f065d"
+  url "https://registry.npmjs.org/abiyz/-/abiyz-0.2.5.tgz"
+  sha256 "d80e2d01b2cc8b0785e4da10fb9e9a476c794dbdb19d6d14e0704ce31093b300"
   license :cannot_represent
 
   depends_on "node@24"
